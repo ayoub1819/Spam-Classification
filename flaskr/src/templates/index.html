@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../public/css/bootstrap.min.css" rel="stylesheet" >
+    <script defer src="../../public/scripts/index.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-6">
+                <div class="card">
+                    <h5 class="card-header">Spam classification</h5>
+                    <div class="card-body">
+                      <div class="mb-1">
+                        <label for="exampleFormControlTextarea1" class="form-label">email body</label>
+                        <textarea class="form-control" id="email-body" rows="3"></textarea>
+                      </div>  
+                    </div>
+                    <div class="card-footer ">
+                        <button onclick="classify()" class="btn btn-primary">Verify</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Result of the classification</h5>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row justify-content-between">
+                                <div class="col-4">
+                                  SVM
+                                </div>
+                                <div class="col-2">
+                                    <span class="badge "></span>
+                                    <div class="d-none spinner-border spinner-border-sm text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row justify-content-between">
+                                <div class="col-4">
+                                  KNN
+                                </div>
+                                <div class="col-2">
+                                    <span class="badge "></span>
+                                    <div class="d-none spinner-border spinner-border-sm text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row justify-content-between">
+                                <div class="col-4">
+                                  Decision Tree
+                                </div>
+                                <div class="col-2">
+                                    <span class="badge "></span>
+                                    <div class="d-none spinner-border spinner-border-sm text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row justify-content-between">
+                                <div class="col-4">
+                                  Random Forest
+                                </div>
+                                <div class="col-2">
+                                    <span class="badge "></span>
+                                    <div class="d-none spinner-border spinner-border-sm text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
